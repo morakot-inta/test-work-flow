@@ -15,5 +15,5 @@ jobs:
       - name: print hello world
         run: echo "Hello, World!"
 
-      # - name: exit with error
-      #   run: exit 1
+      - name: sleep_for_10_seconds
+        run: sleep 10
