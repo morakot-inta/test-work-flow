@@ -1,3 +1,4 @@
+name: frist_flow
 on:
   push:
     branches:

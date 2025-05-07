@@ -1,0 +1,19 @@
+name: second_flow
+
+on:
+  workflow_run:
+    workflows:
+      - frist_flow
+    types:
+      - completed
+
+jobs:
+  second_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: print hello world
+        run: echo "second flow"
