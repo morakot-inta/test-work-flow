@@ -1,6 +1,7 @@
 name: third_flow 
 
 on:
+  workflow_dispatch:
   workflow_run:
     workflows:
       - second_flow 
